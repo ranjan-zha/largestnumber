@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Largest among three numbers</title>
+</head>
+<body>
+
+
+<script>
+        var number1 = parseInt(prompt("Enter First integer number: "));
+        var number2 = parseInt(prompt("Enter Second integer number: "));
+        var number3 = parseInt(prompt("Enter Third integer number: "));
+        var largest;
+        if(number1 >= number2 && number1 >= number3) {
+            largest = number1;
+        }
+        else if (number2 >= number1 && number2 >= number3) {
+            largest = number2;
+        }
+        else {
+            largest = number3;
+        }
+        document.write("The largest number is " +largest)
+        console.log("The largest number is " + largest);
+</script>
+
+</body>
+</html>
